@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpProceeding"
+    android:background="@drawable/bg"
+    >
+
+    <TextView
+        android:id="@+id/notify_disable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:text="도움 진행중"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/fontfamily"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/Linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notify_disable"
+        android:layout_marginTop="42dp">
+
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="도움 완료"
+            android:textSize="50dp"
+            android:fontFamily="@font/fontfamily"
+            android:theme="@style/BtnLooks"/>
+
+        <Button
+            android:id="@+id/btn_backpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Linear2"
+            android:layout_marginRight="50dp"
+            android:textSize="50dp"
+            android:onClick="goBack2"
+            android:layout_weight="1"
+            android:text="뒤로가기"
+            android:fontFamily="@font/fontfamily"
+            android:theme="@style/BtnLooks"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

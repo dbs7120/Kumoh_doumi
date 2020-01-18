@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    >
+
+    <TextView
+        android:id="@+id/notify_disable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:text="장애학생용 페이지"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/fontfamily"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notify_disable"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="현재위치"
+        android:textSize="20dp"
+        android:fontFamily="@font/fontfamily"/>
+
+    <TextView
+        android:id="@+id/et_loc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_location"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/fontfamily"/>
+
+    <TextView
+        android:id="@+id/tv_location2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_loc1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="20dp"
+        android:text="세부위치 추가"
+        android:fontFamily="@font/fontfamily"/>
+
+    <Spinner
+        android:id="@+id/build"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_location2"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/customborder"
+        android:spinnerMode="dropdown"
+        />
+    <Spinner
+        android:id="@+id/floor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/build"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/customborder"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/build"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginRight="50dp"
+        android:text="업무"
+        android:textSize="20dp"
+        android:fontFamily="@font/fontfamily"/>
+    <Spinner
+        android:id="@+id/work"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_work"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/customborder"
+        android:textColor="@color/colorAccent" />
+
+
+    <LinearLayout
+        android:id="@+id/Linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/work"
+        android:layout_marginTop="42dp">
+
+        <Button
+            android:id="@+id/btn_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="위치받기"
+            android:fontFamily="@font/fontfamily"
+            android:theme="@style/BtnLooks"/>
+
+        <Button
+            android:id="@+id/btn_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Linear2"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:text="전송"
+            android:fontFamily="@font/fontfamily"
+            android:theme="@style/BtnLooks"/>
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/ssidTest"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/Linear2"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:layout_marginTop="44dp"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:text="SSID확인용"-->
+    <!--android:textSize="77px"-->
+    <!--android:textStyle="bold"-->
+    <!--android:fontFamily="@font/fontfamily"/>-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#EEB6A5"
+        android:fontFamily="@font/fontfamily"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#EEB6A5"
+        android:fontFamily="@font/fontfamily"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#EEB6A5"
+        android:fontFamily="@font/fontfamily"/>
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_ssid"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/ssidTest"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="전송" />-->
+</RelativeLayout>
